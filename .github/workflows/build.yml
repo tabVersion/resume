@@ -15,3 +15,20 @@ jobs:
         with:
           name: resume
           path: resume.pdf
+      - name: checkout
+        uses: actions/checkout@master
+        with:
+          ref: master
+      - name: build
+        uses: github-actions-x/hugo@master
+      - name: push
+        uses: github-actions-x/commit@v2.7
+        with:
+          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          push-branch: 'master'
+          commit-message: 'resume update'
+          force-add: 'true'
+          files: resume.pdf
+          name: tabVersion
+          email: tabvision@bupt.icu
+          
