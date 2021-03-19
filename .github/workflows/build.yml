@@ -16,7 +16,7 @@ jobs:
           name: resume
           path: resume.pdf
       - name: checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
           ref: master
       - name: build
