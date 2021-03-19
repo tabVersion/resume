@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Bohan Zhang} \\ \vspace{1pt}
+    \small (+86)18691876994 $|$ \href{mailto:sheldonzhang.bupt@gmail.com}{sheldonzhang.bupt@gmail.com} $|$ 
+    \urlstyle{same}\href{https://github.com/tabVersion}{Github} $|$ \urlstyle{same}\href{https://linkedin.com/in/bohan-zhang-a3583b198}{Linkedin}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Beijing University of Posts and Telecommunications}{Beijing}
+      {Bachelor of  Computer Science}{Sept. 2017 -- July 2021}
+      \resumeItemListStart
+        \resumeItem{Rewards: Second-class Scholarship (top 15\%); General GPA: 3.7; TOEFL: 94}
+        \resumeItem{Major Relevant Courses Taken: Computer Networks, Machine Learning, Database System Principles, Operating Systems, Natural Language Processing.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SDE Intern}{Oct. 2020 -- Present}
+      {ByteDance Inc.}{Beijing}
+      \resumeItemListStart
+        \resumeItem{Cooperated to work on a creative deriving platform. Used a decision tree to exclude unnecessary samples, increasing the app's overall revenue by 2\%.}
+        \resumeItem{Used SQL and Flink to build a high-real-time posterior data collection system for pre-training models.}
+        \resumeItem{Became proficient in the micro-service architecture of Protobuf-based RPC communication and Docker-based deployment.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Research Intern}{June 2020 -- Oct. 2020}
+      {System Research Group, Microsoft Research Asia}{Beijing}
+      \resumeItemListStart
+        \resumeItem{Refined an Auto-ML framework, NNI, as team member on GitHub. Implemented NAS algorithms, eg. DARTS and ENAS.}
+        \resumeItem{Used NAS to help the Bing team improve the text classification model; improved regression score by 5\% and decreased the model size by 3\%.}
+        \resumeItem{Modified the Tensorflow source code to simulate an environment where a neural network runs on in a distributed way.}
+        \resumeItem{Participated in Practicing Station and design labs for NAS beginners on campus.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{Apr. 2019 -- Aug. 2019}
+      {Tsinghua University}{Beijing}
+      \resumeItemListStart
+        \resumeItem{Read papers related to knowledge graph embedding, eg. TransE, TransH and reproduce the experiments.}
+        \resumeItem{Reproduced paper \emph{Is Word Segmentation Necessary for Deep Learning of Chinese Representations}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Campus Conference Voting System} $|$ \emph{Golang, Git, SQL}}{Nov. 2019 -- Apr. 2020}
+          \resumeItemListStart
+            \resumeItem{Developed an online voting system using Gin and put it to use online with maximum Query Per Second over 2000.}
+            \resumeItem{Implemented an OAuth module to get user’s identity from Gateway on campus.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Distributed Lab} $|$ \emph{Golang, Git}}{June 2018 -- July 2018}
+          \resumeItemListStart
+            \resumeItem{Reproduced MapReduce and Raft using Golang.}
+            \resumeItem{Implemented a URL counter for large-scale dataset. It can complete the processing of GB-level data in less than a minute.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{DNS Proxy} $|$ \emph{Golang, Git}}{Mar. 2019 -- Mar. 2019}
+          \resumeItemListStart
+            \resumeItem{Increased concurrency performance by opening threads to handle messages.}
+            \resumeItem{Used Golang to implement the DNS protocol and completed a DNS relay with blocking, forwarding, and storing features.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Club and organization experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {\textbf{Technical Chair}}{Sept. 2018 -- June 2019}
+          {Microsoft Student Club}{Beijing University of Posts and Telecommunications}
+          \resumeItemListStart
+            \resumeItem{Organized technical sharing within the school, with more than 100 participants.}
+            \resumeItem{Participated in the 2018 Microsoft hackathon, and created a distributed sharing platform with teammates.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Well-skilled programming in Python and Golang. \\
+     Familiar frameworks: PyTorch, Tensorflow, Django and Gin}; Packages: numpy, sklearn, matplotlib
+    }
+ \end{itemize}
+
+\end{document}
