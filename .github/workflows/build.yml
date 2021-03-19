@@ -19,16 +19,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: master
-      - name: build
-        uses: github-actions-x/hugo@master
-      - name: push
-        uses: github-actions-x/commit@v2.7
-        with:
-          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          push-branch: 'master'
-          commit-message: 'resume update'
-          force-add: 'true'
-          files: resume.pdf
-          name: tabVersion
-          email: tabvision@bupt.icu
+      - name: commit & push
+        run: |
+          git config --global user.name 'tabVersion'
+          git config --global user.email 'tabvision@bupt.icu'
+          git add resume.pdf
+          git commit -am "CI update"
+          git push
           
