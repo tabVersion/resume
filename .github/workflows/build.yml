@@ -10,19 +10,16 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
-      - name: upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: resume
-          path: resume.pdf
-      - name: checkout
-        uses: actions/checkout@v2
-        with:
-          ref: master
+#       - name: upload artifact
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: resume
+#           path: resume.pdf
       - name: commit & push
         run: |
           git config --global user.name 'tabVersion'
           git config --global user.email 'tabvision@bupt.icu'
+          git add resume.pdf
           git commit -am "CI update"
           git push
           
